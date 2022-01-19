@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>DevFolio Bootstrap Portfolio Template - Blog Single</title>
+  <title>Project Details</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -36,18 +36,18 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">DevFolio</a></h1>
+      <h1 class="logo"><a href="index.html">Portfolio</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Skills</a></li>
+          <li><a class="nav-link scrollto " href="index.html#work">Work</a></li>
+          <li><a class="nav-link scrollto " href="index.html#blog">Projects</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -63,7 +63,7 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -77,7 +77,7 @@
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-4">Blog Details</h2>
+          <h2 class="hero-title mb-4">Project Details</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
               <a href="#">Home</a>
@@ -104,63 +104,101 @@
                 <img src="assets/img/post-1.jpg" class="img-fluid" alt="">
               </div>
               <div class="post-meta">
-                <h1 class="article-title">Lorem ipsum dolor sit amet consec tetur adipisicing</h1>
+                <h1 class="article-title">Predictive Analysis on Medical Data Set (Using AutoML)</h1>
                 <ul>
                   <li>
                     <span class="bi bi-person"></span>
-                    <a href="#">Jason London</a>
+                    <a href="#">Sachin Sharma</a>
                   </li>
                   <li>
                     <span class="bi bi-tag"></span>
-                    <a href="#">Web Design</a>
+                    <a href="#">Datacenter Scale Computing</a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <span class="bi bi-chat-left-text"></span>
                     <a href="#">14</a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               <div class="article-content">
                 <p>
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
-                  porta. Quisque velit
-                  nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque
-                  nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                  cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                  Nulla quis lorem ut libero malesuada feugiat.
+                  <h2>Project Overview </h2>
+The recent pandemic has raised alarms to focus on one of the most important aspects of development - Health Care Management. While health care data has various uses we are focusing on observing and predicting one of the critical parameters - patients length of stay. 
+This parameter helps hospitals to identify patients who will stay longer at the time of admission .  This helps in logistics such as resource allocation. The task is to accurately predict the length of stay for each patient case by case so that hospitals can use this information for optimal resource allocation and better functioning. 
+The data contains 18 parameters, some of the relates of the patient such as age, severity of illness, department, type of admission  and some other information related to location such as city, hospital region and hospital type etc.
+The project goal is to build an end to end application that ingests tabular data and uses Google auto ML platform to train a model and then run predictive analysis on new data incoming data. We are trying to replicate a production level architecture using kubernetes, messaging queue, cloud function, data storages and autoML tools.
+
                 </p>
+                <h2>Project Goals</h2>
                 <p>
-                  Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Mauris blandit
-                  aliquet elit, eget tincidunt
-                  nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Donec sollicitudin molestie malesuada.
+                 In this project, we are trying to develop an application whose architecture replicates a real-world application with high transactions per second (Tps) and how to distribute the load uniformly across components. We are using the Google Kubernetes cluster, which is reliable and fault-tolerant towards node failures and has the auto-restart capability. Using a messaging queue to process the load without waiting for acknowledgment and also the separation of concern. Google cloud function is a lightweight pod that is activated on an event and shut down on completion of its task. Finally using AutoML, we are first trying to use cloud capability to perform heavy ML tasks like training models and later making predictions on the top of it. 
+The cloud technologies used are -
+<li> RPC / API interfaces ( Rest API )</li>
+<li>Messaging  queues ( RabbitMQ)</li>
+<li>Databases ( Redis)</li>
+<li>Virtual Machines, containers or "functions as a service"</li>
+<li>Cloud function </li>
+
                 </p>
+                <h2>Architectural Diagram</h2>
                 <p>
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Praesent
-                  sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-                  sem. Donec rutrum congue leo eget malesuada.
+                  <img src="assets/img/Diagram.jpg" alt="" class="img-fluid">
                 </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.
-                  Curabitur arcu erat,
-                  accumsan id imperdiet et, porttitor at sem. Vivamus suscipit tortor eget felis porttitor
-                  volutpat. Vivamus suscipit tortor eget felis porttitor volutpat. Quisque velit nisi, pretium
-                  ut lacinia in, elementum id enim.
-                </p>
+                  <h2>Software Components used </h2> 
+
+                  <h3>REST API</h3> 
+<p> We used the Python Flask library to write Rest Apis. It is a user friendly and easy to use framework. We wrote apis to expose our services to be used by other applications or user interfaces. Key api exposed for this application were:
+POST :  /medical/insert
+Inserts a new record in persistent storage via rabbitMq  and triggers a google cloud function in parallel to get the forecast data for the record.
+GET:   /medical/forecast/lengthofstay
+Gets the forecast of field Length_of_stay for a new patient record, from redis if its forecast data is successfully fetched from the trained model server.
+GET:  /medical/forecast/dump
+Gets a dump of forecasted data stored in redis for each patient_id for debugging purposes.
+GET:  /medical/fetch
+Take patientId as a request parameter and  fetches all the case details for that particular patient, if exists else it returns an error message.
+GET:  /medical/dump
+Dumps all the data from redis, after aggregating the data for each patient.  This data can be consumed by the dashboard to display patient details.
+</p>
+<h3>Rabbit MQ</h3>
+<p>
+After the patient data is received from the user by rest api, the rest api pushes the data to rabbit mq which is then consumed by the worker to do further processing. We used RabbitMQ because it is an easy way to send messages between two processes and it ensures reliable delivery i.e it waits for an acknowledgement. So if the worker process is down it will try to send the data again. The disadvantage is that we can send only small chunks of data using rabbitmq. 
+</p>
+<h3>Redis</h3>
+<p>
+Redis is used as a storage, the worker process uses this to store the patient Data after it has received the prediction from the cloud function. The rest API queries the redis DB to get patient information or the predicted values. The data is stored in the form of patientID:caseID since you can have multiple cases for the same patient. We used redis because it is a fast in memory database with simple key value pairs. The disadvantage would be the record size was huge then redis would perform badly also the data is not persistent in case of restart.
+</p>
+
+<h3>Worker</h3>
+<p>
+Worker is the processing unit, it receives the patient data from the rest API via rabbitmq and calls the cloud function to get the predicted length of stay for the patient and store it in the redis database.     
+</p>
+
+<h3>Google Auto ML</h3>
+<p> 
+We took the training data set from kaggle and provided that as an input to Auto ML which did the classification. The training set has 10 different classes 0-10, 10-20 and so on till more than 100 days. The tensor flow model was then exported and pushed as an image in google container registry to use as docker container. The advantage of using this is that we don’t need to use ML libraries manually and perform tests and trials. The software does a good job at configuring the parameter scores to return an fairly accurate model. The disadvantage is that it is compute heavy tasks and has higher resource requirements. 
+</p>
+
+<h3>Cloud functions </h3>
+<p>
+We used cloud functions for sending request to docker container running the tensor flow model.  The worker sends the patient data to the cloud function which then sends it to the tensor flow model and returns the scores of each label to the worker. The advantage of using cloud functions is that this can be an independent service that can be used by multiple projects.   
+</p>
+<h3>Google Kubernetes Engine (GKE)</h3>
+<p>
+We used GKE to deploy our applications. We used an ingress to expose the REST API and prediction service. All the applications such as REST API, worker were pushed as docker images and then used as services with GKE. The prediction model was pulled from the google container registry. The advantage of using GKE is that we can easily deploy the application and see the logs. Also if any service goes down the GKE will try to respawn it. It's easier to increase the number of replicas in case of increased load.
+</p>
+
+<h2>Training & Testing </h2>
+<p>
+We took the training and testing dataset from kaggle https://www.kaggle.com/nehaprabhavalkar/av-healthcare-analytics-ii.  We sampled our data set into two different samples: Train and Test. We used a train data set to train our model using google cloud AutoML, which uses tensor flow to run regression as a service and generate a model on the tabular data provided as training data set.
+<p>
+
+
                 <blockquote class="blockquote">
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  <p class="mb-0">The solutions that we designed can be scaled for larger use cases very easily, as we have used google kubernetes cluster for deploying our services. However if and when the medical data set changes with newer parameters we will need to re-train the tensor flow model which can easily create a significant overhead as it is a compute heavy task. Although we are currently unaware of any existing solution for this issue, further research can help us come up with efficient solutions to overcome this bottleneck.</p>
                 </blockquote>
-                <p>
-                  Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Mauris blandit
-                  aliquet elit, eget tincidunt
-                  nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Donec sollicitudin molestie malesuada.
-                </p>
               </div>
             </div>
-            <div class="box-comments">
+           <!--  <div class="box-comments">
               <div class="title-box-2">
                 <h4 class="title-comments title-left">Comments (34)</h4>
               </div>
@@ -173,9 +211,6 @@
                     <h4 class="comment-author">Oliver Colmenares</h4>
                     <span>18 Sep 2017</span>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque
-                      ipsam temporibus maiores
-                      quae natus libero optio, at qui beatae ducimus placeat debitis voluptates amet corporis.
                     </p>
                     <a href="3">Reply</a>
                   </div>
@@ -227,8 +262,8 @@
                   </div>
                 </li>
               </ul>
-            </div>
-            <div class="form-comments">
+            </div> -->
+          <!--   <div class="form-comments">
               <div class="title-box-2">
                 <h3 class="title-left">
                   Leave a Reply
@@ -261,13 +296,14 @@
                   </div>
                 </div>
               </form>
-            </div>
+            </div> -->
           </div>
           <div class="col-md-4">
             <div class="widget-sidebar sidebar-search">
-              <h5 class="sidebar-title">Search</h5>
+              <h5 class="sidebar-title">Owner</h5>
               <div class="sidebar-content">
-                <form>
+                <span class="author">Sachin Sharma</span>
+                <!-- <form>
                   <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
                     <span class="input-group-btn">
@@ -276,10 +312,10 @@
                       </button>
                     </span>
                   </div>
-                </form>
+                </form> -->
               </div>
             </div>
-            <div class="widget-sidebar">
+            <!-- <div class="widget-sidebar">
               <h5 class="sidebar-title">Recent Post</h5>
               <div class="sidebar-content">
                 <ul class="list-sidebar">
@@ -300,8 +336,8 @@
                   </li>
                 </ul>
               </div>
-            </div>
-            <div class="widget-sidebar">
+            </div> -->
+           <!--  <div class="widget-sidebar">
               <h5 class="sidebar-title">Archives</h5>
               <div class="sidebar-content">
                 <ul class="list-sidebar">
@@ -322,28 +358,37 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
             <div class="widget-sidebar widget-tags">
               <h5 class="sidebar-title">Tags</h5>
               <div class="sidebar-content">
                 <ul>
                   <li>
-                    <a href="#">Web.</a>
+                    <a href="#">Google Cloud</a>
                   </li>
                   <li>
-                    <a href="#">Design.</a>
+                    <a href="#">Flask</a>
                   </li>
                   <li>
-                    <a href="#">Travel.</a>
+                    <a href="#">Redis</a>
                   </li>
                   <li>
-                    <a href="#">Photoshop</a>
+                    <a href="#">RabbitMQ</a>
                   </li>
                   <li>
-                    <a href="#">Corel Draw</a>
+                    <a href="#">Docker</a>
                   </li>
                   <li>
-                    <a href="#">JavaScript</a>
+                    <a href="#">Kubernetes</a>
+                  </li>
+                  <li>
+                    <a href="#">Google AutoML</a>
+                  </li>
+                  <li>
+                    <a href="#">Google Cloud Functions</a>
+                  </li>
+                  <li>
+                    <a href="#">Google Kubernetes Engine</a>
                   </li>
                 </ul>
               </div>
