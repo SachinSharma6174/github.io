@@ -1,0 +1,51 @@
+
+1. Artificial Intelligence versus Machine Learning versus Deep Learning [6 points]
+
+Artificial Intelligence : 
+
+We can define AI as the theoretical development of computer systems and their computing abitlities at such a scale that they can be enabled to perform certain task that are usually considered to require human intelligence or perspective. For example identifying object through visual sensors, recognizing speech, making day to day decision which are in general complex for computers to make.
+
+
+Machine Learning
+
+Machine learning can be defined as the subset or branch of artificial intelligence (AI) which can be implemented and run by computer systems. The major focus of machine learning is to train computers on some labelled data set and try to make predictions in terms of classification or regression on a new or future data sets. It makes use of algorithms and mathematical framework to train and test the data and try to intimate the process humans use to learn improve the systems accuracy. Machine Learning is broadlly divided into to fields - Supervised Learning and Unsupervised Learning
+
+
+Deep Learning 
+
+Deep Learning  can be classified as subset of Machine Learning where in the labelling and indentifications of parameters are also designed to be done by computer algorithms.
+The concept of Deep learning is motivated from the function of human neuron which sends electic signal corresponding to a external stimuli in the human body. The main component of a modern deep learning frameworks are their efficiency in linear algebra capabilities.
+
+
+Then describe the relationship between the three disciplines.
+
+As we understand from the definitions that all the three fields comes under the same field of computer science which is the Theory of Artificial Intelligent Computer Systems. We define certain standards test like Turing test for computer systems which performs AI tasks. This is done inorder to judge success of such systems. Since success of an AI system can be very convulated. Similarly we define success matrics for Machine Learning models. By using Background Making predictions on Key Performance Indicators (KPI) using statistical tools and knowledges about underlying entities.
+Using the predictive power of machine learning to predict KPIs is a natural step in this direction.
+
+
+When we talk about success in deep learning we generally observe that Deep Learning techniques are generally more successfull than Machine Learning where there is lack of domain understanding for feature introspection. Deep Learning helps developer worry less about feature engineering and focus more on the framework functionality. Deep Learning really shines when it comes to complex problems such as image classification, natural language processing, and speech recognition. 
+
+In general we can say that each field complements the drawbacks of other and help solve specific problems in the Artificial Intelligence domain.
+
+
+
+2. Supervised Learning Generalization 
+
+Describe the motivation for splitting data into a training dataset and test dataset and the purpose of each subset for developing deep learning algorithms.
+
+
+Separating data into training and testing sets is an important part of evaluating deep learning models. Generally, when we separate a data set into a training set and testing set, we try to give most of the data to out training data set, and a smaller chunk of the data is used for testing the deep learning model. It is very important to perform a good random sampling of data using mathematical models like Random walks. Randomly sampled data helps ensure that the testing and training sets are similar and their are not many outlier or the any set is not biased. By using similar data for training and testing, we can minimize the effects of data discrepancies and better understand the characteristics of the model.
+
+After a model has been processed by using the training set, we test the model by making predictions against the test set. Because the data in the testing set already contains known values for the attribute that we want to predict, it is easy to determine whether the model's guesses are correct.
+
+
+3. Artificial Neurons:
+
+
+
+
+
+
+
+
+
